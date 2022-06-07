@@ -78,3 +78,6 @@ if executable('clangd')
         autocmd FileType cpp setlocal omnifunc=lsp#complete
     augroup end
 endif
+inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
