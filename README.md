@@ -1,2 +1,2 @@
 # vimrc
-vimrc file for embedded low-level c development
+vimrc file for C development on servers without desktop
